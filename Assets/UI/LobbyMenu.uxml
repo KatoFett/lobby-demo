@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu.uss?fileID=7433441132597879392&amp;guid=4c4d3caaca5ed134fbf854546658ef95&amp;type=3#MainMenu" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement class="panel" style="flex-grow: 0; flex-direction: row; align-items: center; justify-content: space-between; padding-right: 4px; padding-left: 4px;">
+                <ui:Label tabindex="-1" text="8 Players" parse-escape-sequences="true" display-tooltip-when-elided="true" name="labelPlayerCount" />
+            </ui:VisualElement>
+            <ui:ListView name="listPlayers" show-alternating-row-backgrounds="ContentOnly" fixed-item-height="48" style="flex-grow: 1;" />
+            <ui:VisualElement name="containerActions" class="panel" style="flex-grow: 0; align-self: stretch; justify-content: space-between; align-items: stretch; flex-direction: row;">
+                <ui:Button text="Leave" parse-escape-sequences="false" display-tooltip-when-elided="true" name="buttonLeaveLobby" />
+                <ui:Button text="Unready" name="buttonReady" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="panel" style="flex-grow: 0; flex-shrink: 0;">
+            <ui:VisualElement name="containerLobbyOptions" style="flex-grow: 1; width: 280px;">
+                <ui:Toggle label="Option 1" name="toggleOption1" style="flex-direction: row;" />
+                <ui:Toggle label="Option 2" name="toggleOption2" style="align-self: stretch; flex-direction: row; justify-content: flex-start;" />
+                <ui:EnumField label="Another Option" type="UnityEngine.TextAlignment, UnityEngine.TextRenderingModule" value="Center" name="dropdownOption3" style="flex-direction: column;" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="1/8" parse-escape-sequences="true" display-tooltip-when-elided="true" name="labelPlayersReady" style="padding-left: 4px;" />
+            <ui:Button text="Start" name="buttonStartGame" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

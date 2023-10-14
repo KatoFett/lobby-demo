@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu.uss?fileID=7433441132597879392&amp;guid=4c4d3caaca5ed134fbf854546658ef95&amp;type=3#MainMenu" />
+    <ui:VisualElement name="containerName" class="panel" style="flex-grow: 0; flex-direction: row; overflow: visible;">
+        <ui:TextField picking-mode="Ignore" label="Name:" value="Player" keyboard-type="ASCIICapable" multiline="false" name="fieldName" style="flex-grow: 1; justify-content: flex-start; align-items: stretch; flex-shrink: 1; align-self: auto;" />
+    </ui:VisualElement>
+    <ui:VisualElement class="panel" style="flex-grow: 0; flex-direction: row; justify-content: space-between;">
+        <ui:Label tabindex="-1" text="0 lobbies found" parse-escape-sequences="true" display-tooltip-when-elided="true" name="labelLobbyCount" style="margin-left: 6px;" />
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Refresh" name="buttonRefreshLobbies" class="icon" style="background-image: url(&apos;project://database/Assets/resource/style01/shape028_style01_color08.png?fileID=2800000&amp;guid=1d1e4114aa0106746b1b2e2a7d392690&amp;type=3#shape028_style01_color08&apos;);" />
+    </ui:VisualElement>
+    <ui:ListView name="listLobby" show-alternating-row-backgrounds="ContentOnly" fixed-item-height="30" style="flex-grow: 1;" />
+    <ui:VisualElement name="containerActions" class="panel" style="flex-grow: 0; align-self: stretch; justify-content: flex-start; align-items: stretch; flex-direction: row;">
+        <ui:Button text="Create Lobby" parse-escape-sequences="false" display-tooltip-when-elided="true" name="buttonCreateLobby" />
+        <ui:Button text="Join" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonJoinLobby" />
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="labelJoinAction" style="display: flex;" />
+    </ui:VisualElement>
+</ui:UXML>

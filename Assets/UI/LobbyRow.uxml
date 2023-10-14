@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu.uss?fileID=7433441132597879392&amp;guid=4c4d3caaca5ed134fbf854546658ef95&amp;type=3#MainMenu" />
+    <ui:VisualElement class="row" style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: space-between; align-self: auto; -unity-text-align: middle-left; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; background-image: url(&apos;project://database/Assets/Images/silver-metallic-textured-background.jpg?fileID=2800000&amp;guid=269dec1b5fc195241acd4d5f76863b8f&amp;type=3#silver-metallic-textured-background&apos;);">
+        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="labelLobbyName" />
+        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="labelPlayerCount" />
+    </ui:VisualElement>
+</ui:UXML>
