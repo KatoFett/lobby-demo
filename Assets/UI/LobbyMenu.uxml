@@ -5,7 +5,7 @@
             <ui:VisualElement class="panel" style="flex-grow: 0; flex-direction: row; align-items: center; justify-content: space-between; padding-right: 4px; padding-left: 4px;">
                 <ui:Label tabindex="-1" text="8 Players" parse-escape-sequences="true" display-tooltip-when-elided="true" name="labelPlayerCount" />
             </ui:VisualElement>
-            <ui:ListView name="listPlayers" show-alternating-row-backgrounds="ContentOnly" fixed-item-height="48" style="flex-grow: 1;" />
+            <ui:ListView name="listPlayers" show-alternating-row-backgrounds="None" fixed-item-height="48" selection-type="None" style="flex-grow: 1;" />
             <ui:VisualElement name="containerActions" class="panel" style="flex-grow: 0; align-self: stretch; justify-content: space-between; align-items: stretch; flex-direction: row;">
                 <ui:Button text="Leave" parse-escape-sequences="false" display-tooltip-when-elided="true" name="buttonLeaveLobby" />
                 <ui:Button text="Unready" name="buttonReady" />
